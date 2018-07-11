@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: OzCxOmVSRW+ihqGow0zh2Bz4aCUwaWNofsXGa/ks9bMAfdqoqiLYA0JlKNFzkY5I5Zt+EARQC5qlCxm5nGuxD4H08Bpko3nuM9+Nqi1i7qlhTGgJYuCWsDa+vH1hc2RBRwObeCS0gd+L3DxuKwPHTmxObzjWE9Ib5UB5JzGRbV4ytBlVrdUnOUtmDUwbaHnipGYaW90rAY2Ay/4Me6Sn5T9lLgveS63fPF4Rd+I0kzrYwfmGPZ2In1tBbWVTHS6y793YN0//ZTnTs4U8FdHOTawbk9rxNtXSKoG5KdYItXchZu/w0G57+jl/tWrzNfKSzLzwngSMrRDI1/LEtoIrjVxoZOw/BQFVyllGLUPEKMpdtQAvFyJPIOqMU9LLlw9zeeRgsJxwNiteGUryz+X+akVlcZ+1XoaLVQkNcVhtW2A/s/o+ba4OYuKp5BWrQD2EqGqlM49Vf4mAeEr7g27UIvP77EhjllfEBfcx8xGjAnLcylNfI1qvTNjPNj063bbbBz+pQDryUIVekRuq1fGNPRuJpJdxAjfp8tO6Rv27RtMfsCyj7W1Dn3xqlBvFSw7uBN4BCdxGe+SqgbIhaEr/szHybYJ/XDGIJSuctktVzwmxKdQ0nDQt6lvdPP+q2OQcxSXFVtYiUfzsDUTxQbE0HI8qPYxy/y/2PKAsa9JwEtM=
+  app: fierce-brook-57402
+  on:
+    repo: jtontiwith/playingwithreact
